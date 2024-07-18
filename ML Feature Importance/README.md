@@ -20,3 +20,4 @@ I could have used another methods to make sure the model wasn't overfitting like
 
 I used the build-in feature_importances to calculate the 10 most important features
 
+5 out of the 10 features are in the backward direction meaning the respones from the server help the classifier more than the ones from the client
