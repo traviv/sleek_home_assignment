@@ -22,11 +22,16 @@ In order to better understand all the Features I split my analyz to different ca
 9. Idle-Base Features
 10. Remaining Features
 
+
 For each features group I check characteristics like mean, std, min, max values, plotted distribution for continues data and bar-plot for binary data and checked for correlation with a heat map
 
-I can see that most features are really wide spread. most of the values are small around zero and some are much higher. That affects the STD making it much higher than the mean
+I can see that most features are really wide spread. most of the values are small around zero and some are much higher. That affects the STD making it much higher than the mean. That means we need to scale them to make better models.
 
 From the correlation heat map we can see that many features have a strong correlation with each other and maybe can be ignored
 
+Some features have infinate size and are hard to work with 
 
+Some binary features are really biased to one tag
+
+In conclusion there are a lot of features. some of them can be droped doe to correlation with other features, values that are too scattered or lack of diversity 
 
