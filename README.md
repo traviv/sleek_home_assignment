@@ -6,7 +6,7 @@ compelling insights.
 
 I split my work into three section:
 1. [EDA](https://github.com/traviv/sleek_home_assignment/tree/main/EDA) - cleaning and analyzing the data
-2. ML - Anomaly Detection with Isolation Forest
+2. [ML](https://github.com/traviv/sleek_home_assignment/tree/main/ML%20Anomaly%20Detection) - Anomaly Detection with Isolation Forest
 3. DL - Multi-Label classifier with Feed-Forward Neural Network
 4. ML - Multi-Label classifier and Features Importance with XGboost
 
