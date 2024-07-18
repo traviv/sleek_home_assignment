@@ -10,4 +10,6 @@ I split my work into three section:
 3. DL - Multi-Label classifier with Feed-Forward Neural Network
 4. ML - Multi-Label classifier and Features Importance with XGboost
 
-In each section, there's a Jupyter Notebook with my code and readme file that explains my decisions and insights.
+All sections are in the Jupyter Notebook 
+
+Each part is described in a separate PDF file with decisions and insights explained
