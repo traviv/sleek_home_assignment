@@ -1,15 +1,37 @@
-# Sleek Home Assignment
-In this assignment I was asked to analyze the CICIDS2017 [dataset](https://www.unb.ca/cic/datasets/ids-2017.html)
+# EDA
 
-In the assignment, I'm importing the dataset, conducting comprehensive exploratory data analysis (EDA), and deriving three
-compelling insights.
+In this section, I learned the data, cleaned it, analyzed it, and gained insights
 
-I split my work into three section:
-1. EDA - cleaning and analyzing the data
-2. ML - Anomaly Detection with Isolation Forest
-3. DL - Multi-Label classifier with Feed-Forward Neural Network
-4. ML - Multi-Label classifier and Features Importance with XGboost
+I started by cleaning the column names from unwanted spaces, then dropping columns with all zeros and duplicated columns leaving only the first one in every duplication
 
-All sections are in the [Jupyter Notebook](https://github.com/traviv/sleek_home_assignment/blob/main/sleek_home_assignment.ipynb) 
+I found out all the columns were numeric except for the categorical labels, some of them binary and some continues 
 
-Each part is described in a separate PDF file with decisions and insights explained
+There are 6 different labels were 'BENIGN' is regular communication and the rest are attacks
+
+There are 30094 different ports. The main ones are 80, 53, 443
+
+In order to better understand all the Features I split my analyz to different categories:
+1. Flow-based Features
+2. Basic Features
+3. Timing-Base Featurs
+4. Content-Base Features
+5. Header-Base Featurs
+6. Packet-Base Features
+7. Flag-Base Features
+8. Active-Base Features
+9. Idle-Base Features
+10. Remaining Features
+
+
+For each features group I check characteristics like mean, std, min, max values, plotted distribution for continues data and bar-plot for binary data and checked for correlation with a heat map
+
+I can see that most features are really wide spread. most of the values are small around zero and some are much higher. That affects the STD making it much higher than the mean. That means we need to scale them to make better models.
+
+From the correlation heat map we can see that many features have a strong correlation with each other and maybe can be ignored
+
+Some features have infinate size and are hard to work with 
+
+Some binary features are really biased to one tag
+
+In conclusion, there are a lot of features. some of them can be dropped due to correlation with other features, values that are too scattered, or lack of diversity in values
+

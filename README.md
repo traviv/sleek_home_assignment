@@ -10,6 +10,6 @@ I split my work into three section:
 3. DL - Multi-Label classifier with Feed-Forward Neural Network
 4. ML - Multi-Label classifier and Features Importance with XGboost
 
-All sections are in the [Jupyter Notebook](https://github.com/traviv/sleek_home_assignment/blob/main/sleek_home_assignment.ipynb) 
+Each part seperated in a different repository 
 
-Each part is described in a separate PDF file with decisions and insights explained
+In each repository, there's a Jupyter notebook with the relevant code and an explanation of my decisions and insights

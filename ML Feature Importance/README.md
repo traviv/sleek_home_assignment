@@ -1,15 +1,4 @@
-# Sleek Home Assignment
-In this assignment I was asked to analyze the CICIDS2017 [dataset](https://www.unb.ca/cic/datasets/ids-2017.html)
+# Feature Importance and Multi-Label Classifier with XGboost
 
-In the assignment, I'm importing the dataset, conducting comprehensive exploratory data analysis (EDA), and deriving three
-compelling insights.
+In this section I decided to use XGboost model to make multi-label classification and use it to find feature importance
 
-I split my work into three section:
-1. EDA - cleaning and analyzing the data
-2. ML - Anomaly Detection with Isolation Forest
-3. DL - Multi-Label classifier with Feed-Forward Neural Network
-4. ML - Multi-Label classifier and Features Importance with XGboost
-
-All sections are in the [Jupyter Notebook](https://github.com/traviv/sleek_home_assignment/blob/main/sleek_home_assignment.ipynb) 
-
-Each part is described in a separate PDF file with decisions and insights explained

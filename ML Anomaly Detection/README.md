@@ -1,15 +1,26 @@
-# Sleek Home Assignment
-In this assignment I was asked to analyze the CICIDS2017 [dataset](https://www.unb.ca/cic/datasets/ids-2017.html)
+# Anomaly Detection 
 
-In the assignment, I'm importing the dataset, conducting comprehensive exploratory data analysis (EDA), and deriving three
-compelling insights.
+In this section, I tried to find anomalies in the dataset using Isolation Forest
 
-I split my work into three section:
-1. EDA - cleaning and analyzing the data
-2. ML - Anomaly Detection with Isolation Forest
-3. DL - Multi-Label classifier with Feed-Forward Neural Network
-4. ML - Multi-Label classifier and Features Importance with XGboost
+I decided to use Isolation Forest because it usually gives good results for anomaly detection and is easy to understand
 
-All sections are in the [Jupyter Notebook](https://github.com/traviv/sleek_home_assignment/blob/main/sleek_home_assignment.ipynb) 
+I started by encoding my labels into 1 for regular communication ('BENIGN') and -1 for all the rest 
 
-Each part is described in a separate PDF file with decisions and insights explained
+Then splitting the data to features (X) and target (y_encoded)
+
+I scaled my features with RobustScaler because they are wide scattered 
+
+I calculated the contamination of the data in order to find the scale of anomalies
+
+I build the Isoletion Forest model and trained it on the data
+
+Lastly I predict the anomalies in the data and evalueted the results
+
+we can see that the results are OK. The model managed to find the anomalies with 66% accuracy
+
+I decided to use all the availble features maybe with better feature selection i could have reach better results
+
+Also by running the model with different hyper parameters could get better results as well
+
+Or maybe the data isn't suited for anomaly detection, there are many different attacks and maybe the ration of contamination doesn't count as anomaly and we need different methods
+
