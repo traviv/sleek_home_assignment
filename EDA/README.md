@@ -33,5 +33,5 @@ Some features have infinate size and are hard to work with
 
 Some binary features are really biased to one tag
 
-In conclusion there are a lot of features. some of them can be droped doe to correlation with other features, values that are too scattered or lack of diversity 
+In conclusion, there are a lot of features. some of them can be dropped due to correlation with other features, values that are too scattered, or lack of diversity in values
 
