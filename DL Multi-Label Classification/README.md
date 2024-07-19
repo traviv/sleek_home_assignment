@@ -1,6 +1,6 @@
 # DL Multi-Label Classification
 
-In this section I tried to predict multi-label classification with Feed-Forward Neural Network
+In this section, I tried to predict multi-label classification with Feed-Forward Neural Network
 
 I decided to use Feed-Forward Neural Network because it's easy to implement and can get good results
 
@@ -10,12 +10,12 @@ I scaled my features with RobustScaler because they are wide scattered and encod
 
 I splitted the data into train and test
 
-I chose to use a simple FF NN with three hiden layers. First layesr at the size of 64, second at the size of 32 and last at the size of 16
+I chose to use a simple FF NN with three hidden layers. The first layer at the size of 64, the second at the size of 32, and last at the size of 16
 
-In real life I would try different architectures for that network with different sizes and number of layers 
+In real life, I would try to improve the network by using different architectures with various layers sizes and numbers
 
-In the model evaluation I can see that it performed well on some labels and poorely on others
+In the model evaluation, I can see that it performed well on some labels and poorly on others
 
-It done well on classes with large semple size and bad on small ones
+It did well in classes with large sample sizes and badly in small ones
 
-To improve the model perfoemance I can try use deifferent features, different model architectures, train the model on more semples and try different hyper parameters
+To improve the model performance I can try to use different features, and other model architectures, train the model on more samples, and try different hyperparameters
