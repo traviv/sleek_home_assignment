@@ -8,19 +8,18 @@ I started by encoding my labels into 1 for regular communication ('BENIGN') and 
 
 Then splitting the data to features (X) and target (y_encoded)
 
-I scaled my features with RobustScaler because they are wide scattered 
+I scale my features with RobustScaler because they are scattered wide
 
-I calculated the contamination of the data in order to find the scale of anomalies
+I calculated the contamination of the data to find the scale of anomalies
 
-I build the Isoletion Forest model and trained it on the data
+I built the Isolation Forest model and trained it on the data
 
-Lastly I predict the anomalies in the data and evalueted the results
+Lastly, I predicted the anomalies in the data and evaluated the results
 
 we can see that the results are OK. The model managed to find the anomalies with 66% accuracy
 
-I decided to use all the availble features maybe with better feature selection i could have reach better results
+I decided to use all the available features, maybe with a better feature selection I could have reached better results
 
-Also by running the model with different hyper parameters could get better results as well
+Also, running the model with different hyperparameters could reach better results
 
-Or maybe the data isn't suited for anomaly detection, there are many different attacks and maybe the ration of contamination doesn't count as anomaly and we need different methods
-
+Or maybe the data isn't suited for anomaly detection, there are many different attacks and maybe the ratio of contamination doesn't count as an anomaly and we need different methods
